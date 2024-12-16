@@ -33,7 +33,7 @@ __export(standalone_loader_exports, {
 });
 module.exports = __toCommonJS(standalone_loader_exports);
 var import_node_fetch = __toESM(require("node-fetch"));
-var DEFAULT_WORKER_JS = `https://cdn.jsdelivr.net/gh/lixiu001/bm-code-generator@1.1.1/dist/standalone-worker.min.js`;
+var DEFAULT_WORKER_JS = `http://127.0.0.1:5501/dist/standalone-worker.min.js`;
 var DEFAULT_TIMEOUT_IN_MS = 60 * 1e3;
 var workerJsCache = /* @__PURE__ */ new Map();
 async function init({
@@ -49,12 +49,13 @@ async function generateCode(options) {
     throw new Error("Worker is not supported");
   }
   const workerJsUrl = options.workerJsUrl || DEFAULT_WORKER_JS;
+  print(workerJsUrl);
   const workerJs = await loadWorkerJs(workerJsUrl);
   const worker = new Worker(workerJs.url, {
     type: "classic",
     credentials: "omit"
   });
-  return new Promise((resolve, reject) => {
+  return new Promise(async (resolve, reject) => {
     const timer = setTimeout(() => {
       reject(new Error("timeout"));
       worker.terminate();
@@ -93,7 +94,6 @@ async function generateCode(options) {
     };
     worker.postMessage({
       type: "run",
-      solution: options.solution,
       schema: options.schema,
       flattenResult: options.flattenResult
     });
