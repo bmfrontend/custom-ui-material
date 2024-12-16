@@ -1,0 +1,56 @@
+{
+  "packages": [
+    {
+      "package": "@bm/custom-ui-material",
+      "version": "0.1.1",
+      "library": "BizComps",
+      "urls": [
+        "https://unpkg.com/@bm/custom-ui-material@0.1.1/build/lowcode/render/default/view.js",
+        "https://unpkg.com/@bm/custom-ui-material@0.1.1/build/lowcode/render/default/view.css"
+      ],
+      "editUrls": [
+        "https://unpkg.com/@bm/custom-ui-material@0.1.1/build/lowcode/view.js",
+        "https://unpkg.com/@bm/custom-ui-material@0.1.1/build/lowcode/view.css"
+      ],
+      "advancedUrls": {
+        "default": [
+          "https://unpkg.com/@bm/custom-ui-material@0.1.1/build/lowcode/render/default/view.js",
+          "https://unpkg.com/@bm/custom-ui-material@0.1.1/build/lowcode/render/default/view.css"
+        ]
+      },
+      "advancedEditUrls": {}
+    }
+  ],
+  "components": [
+    {
+      "exportName": "BmCustomUiMaterialMeta",
+      "npm": {
+        "package": "@bm/custom-ui-material",
+        "version": "0.1.1"
+      },
+      "url": "https://unpkg.com/@bm/custom-ui-material@0.1.1/build/lowcode/meta.js",
+      "urls": {
+        "default": "https://unpkg.com/@bm/custom-ui-material@0.1.1/build/lowcode/meta.js"
+      },
+      "advancedUrls": {
+        "default": [
+          "https://unpkg.com/@bm/custom-ui-material@0.1.1/build/lowcode/meta.js"
+        ]
+      }
+    }
+  ],
+  "sort": {
+    "groupList": [
+      "精选组件",
+      "原子组件"
+    ],
+    "categoryList": [
+      "组件"
+    ]
+  },
+  "groupList": [
+    "精选组件",
+    "原子组件"
+  ],
+  "ignoreComponents": {}
+}

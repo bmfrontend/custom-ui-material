@@ -1,0 +1,56 @@
+{
+  "packages": [
+    {
+      "package": "@bm/custom-ui-material",
+      "version": "0.1.1",
+      "library": "BizComps",
+      "urls": [
+        "./render/default/view.js",
+        "./render/default/view.css"
+      ],
+      "editUrls": [
+        "./view.js",
+        "./view.css"
+      ],
+      "advancedUrls": {
+        "default": [
+          "./render/default/view.js",
+          "./render/default/view.css"
+        ]
+      },
+      "advancedEditUrls": {}
+    }
+  ],
+  "components": [
+    {
+      "exportName": "BmCustomUiMaterialMeta",
+      "npm": {
+        "package": "@bm/custom-ui-material",
+        "version": "0.1.1"
+      },
+      "url": "./meta.js",
+      "urls": {
+        "default": "./meta.js"
+      },
+      "advancedUrls": {
+        "default": [
+          "./meta.js"
+        ]
+      }
+    }
+  ],
+  "sort": {
+    "groupList": [
+      "精选组件",
+      "原子组件"
+    ],
+    "categoryList": [
+      "组件"
+    ]
+  },
+  "groupList": [
+    "精选组件",
+    "原子组件"
+  ],
+  "ignoreComponents": {}
+}
