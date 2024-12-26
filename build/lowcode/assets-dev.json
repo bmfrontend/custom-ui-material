@@ -2,7 +2,7 @@
   "packages": [
     {
       "package": "@bm/custom-ui-material",
-      "version": "0.1.1",
+      "version": "0.0.3",
       "library": "BizComps",
       "urls": [
         "./render/default/view.js",
@@ -26,7 +26,7 @@
       "exportName": "BmCustomUiMaterialMeta",
       "npm": {
         "package": "@bm/custom-ui-material",
-        "version": "0.1.1"
+        "version": "0.0.3"
       },
       "url": "./meta.js",
       "urls": {
