@@ -19,8 +19,8 @@
     },
     {
       "package": "@bm/custom-ui-material",
-      "version": "0.0.7",
-      "library": "BizComps",
+      "version": "0.0.12",
+      "library": "AthenaDesign",
       "urls": [
         "./render/default/view.js",
         "./render/default/view.css"
@@ -43,7 +43,7 @@
       "exportName": "BmCustomUiMaterialMeta",
       "npm": {
         "package": "@bm/custom-ui-material",
-        "version": "0.0.7"
+        "version": "0.0.12"
       },
       "url": "./meta.js",
       "urls": {
